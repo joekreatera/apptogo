@@ -83,6 +83,14 @@
                                     <segue destination="3nJ-sZ-7gc" kind="show" id="DlJ-Q2-97B"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ic-Or-icZ">
+                                <rect key="frame" x="73" y="682" width="274" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show table"/>
+                                <connections>
+                                    <segue destination="plE-ki-ObG" kind="show" id="4Bm-32-L3T"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4u-uo-kwf">
                                 <rect key="frame" x="180" y="299" width="70" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -95,7 +103,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="JiA-f7-Ibr"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zPi-4X-oOB"/>
+                    <navigationItem key="navigationItem" id="zPi-4X-oOB">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="MnE-J4-847"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="msg" destination="apK-vk-Ef9" id="qUk-bf-cDn"/>
                     </connections>
@@ -103,6 +113,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5YU-bG-ifd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1905.7971014492755" y="140.625"/>
+        </scene>
+        <!--Table View-->
+        <scene sceneID="UO4-lF-Bwj">
+            <objects>
+                <tableViewController title="Table View" id="plE-ki-ObG" customClass="JTableViewController" customModule="AppToGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="-1" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ado-om-8q9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCustomCell" textLabel="Pgq-sj-hKK" rowHeight="77" style="IBUITableViewCellStyleDefault" id="cXa-Hc-swm">
+                                <rect key="frame" x="0.0" y="28" width="414" height="77"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cXa-Hc-swm" id="Wsa-lk-bDc">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="76.666666666666671"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pgq-sj-hKK">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="76.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="plE-ki-ObG" id="148-Gb-XUy"/>
+                            <outlet property="delegate" destination="plE-ki-ObG" id="f1i-Km-JxC"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VhO-Rg-MU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3137.68115942029" y="140.625"/>
         </scene>
         <!--Webkit View Controller-->
         <scene sceneID="uor-SM-ANH">
@@ -124,7 +174,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration" allowsPictureInPictureMediaPlayback="NO">
-                                    <dataDetectorTypes key="dataDetectorTypes"/>
+                                    <dataDetectorTypes key="dataDetectorTypes" none="YES"/>
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>

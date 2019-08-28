@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D81FBA8A2316ED8C00764EFF /* JTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81FBA892316ED8C00764EFF /* JTableViewController.swift */; };
 		D83A6EC1230ECB1D0081B8D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83A6EC0230ECB1D0081B8D1 /* AppDelegate.swift */; };
 		D83A6EC3230ECB1D0081B8D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83A6EC2230ECB1D0081B8D1 /* ViewController.swift */; };
 		D83A6EC6230ECB1D0081B8D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83A6EC4230ECB1D0081B8D1 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D81FBA892316ED8C00764EFF /* JTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JTableViewController.swift; sourceTree = "<group>"; };
 		D83A6EBD230ECB1D0081B8D1 /* AppToGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppToGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83A6EC0230ECB1D0081B8D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D83A6EC2230ECB1D0081B8D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				D83A6EC2230ECB1D0081B8D1 /* ViewController.swift */,
 				D871A74C230F009400A28177 /* MyItem.swift */,
 				D83A6EC4230ECB1D0081B8D1 /* Main.storyboard */,
+				D81FBA892316ED8C00764EFF /* JTableViewController.swift */,
 				D871A74E230F057E00A28177 /* JWebkitViewController.swift */,
 				D83A6EC7230ECB1F0081B8D1 /* Assets.xcassets */,
 				D83A6EC9230ECB1F0081B8D1 /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D81FBA8A2316ED8C00764EFF /* JTableViewController.swift in Sources */,
 				D871A74D230F009400A28177 /* MyItem.swift in Sources */,
 				D871A74F230F057E00A28177 /* JWebkitViewController.swift in Sources */,
 				D871A74B230EFDE800A28177 /* SecondViewF.swift in Sources */,

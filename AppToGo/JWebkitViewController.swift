@@ -23,7 +23,7 @@ class JWebkitViewController:UIViewController, WKNavigationDelegate{
         print( web.isLoading )
         web.navigationDelegate = self
         perform(#selector(checkLoading), with: nil, afterDelay: 5.0)
-    
+ 
     }
     
     @objc func checkLoading()->Void{
