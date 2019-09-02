@@ -23,6 +23,7 @@ class JTableViewController:UITableViewController{
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "MyCustomCell") as! UITableViewCell
         
+        print( indexPath.item)
         cell.textLabel?.text = "Joe1"
         
         return cell

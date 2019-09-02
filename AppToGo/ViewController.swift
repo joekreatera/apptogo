@@ -28,7 +28,14 @@ class ViewController: UIViewController {
         myLabel.text = "Do hello \(msg) !!!"
         bigText.text = largeText
         
+        var items:ItemDatabase = ItemDatabase.getInstance()
+        var database = items.database
         
+        print( database)
+        
+        database.append(  Item("Hello , first!"))
+        
+        print(database)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
