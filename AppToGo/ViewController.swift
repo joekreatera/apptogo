@@ -29,13 +29,12 @@ class ViewController: UIViewController {
         bigText.text = largeText
         
         var items:ItemDatabase = ItemDatabase.getInstance()
-        var database = items.database
         
-        print( database)
+        items.append(  item:Item("Hello , first!"))
+        items.append(  item:Item("Hello , second!"))
+        items.append(  item:Item("Hello , third!"))
         
-        database.append(  Item("Hello , first!"))
         
-        print(database)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

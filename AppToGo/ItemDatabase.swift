@@ -15,9 +15,44 @@ class ItemDatabase {
     
     private var items:Array<Item>?
     
+    private var itemOnEdition:Item?
+    
     init(){
         
         items = Array<Item>()
+        itemOnEdition = nil
+        
+    }
+    
+    public var itemToEdit:Item?{
+        
+        get{
+            return itemOnEdition
+        }
+        set(edit){
+            itemOnEdition = edit;
+        }
+        
+    }
+    
+    public func append(item:Item){
+        
+        items?.append(item);
+        
+    }
+    
+    public func delete(item:Item){
+        
+        var c = 0;
+        for i in  items! {
+            if( i===item){
+                items?.remove(at:c)
+                return;
+            }
+            c = c+1
+        }
+        
+        //items?.remove(object:item)
         
     }
     
