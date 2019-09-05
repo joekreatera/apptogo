@@ -15,9 +15,21 @@ class JTableViewController:UITableViewController{
         super.viewDidLoad()
         
         navigationItem.leftBarButtonItem = editButtonItem
+        
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addTapped))
                 
     }
     
+    
+     @objc func addTapped()->Void{
+        
+        print("none")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1;
     }

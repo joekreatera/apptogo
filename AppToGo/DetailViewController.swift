@@ -36,8 +36,6 @@ public class DetailViewController:UIViewController{
         
         item?.isDone = isDoneControl.isOn
         item?.name = activityTitle.text!
-        
-        ItemDatabase.getInstance().append(item: item!)
         let uiv:UIViewController? = navigationController?.popViewController(animated: true)
         
         
