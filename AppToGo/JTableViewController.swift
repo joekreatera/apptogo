@@ -25,6 +25,8 @@ class JTableViewController:UITableViewController{
      @objc func addTapped()->Void{
         
         print("none")
+        
+        performSegue(withIdentifier: "goAdd", sender: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {

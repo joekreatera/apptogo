@@ -20,4 +20,15 @@ class Item{
         isDone = false
         
     }
+    
+    public var done:Bool{
+        
+        get{
+            return isDone;
+        }
+        set(d){
+            isDone = d
+        }
+        
+    }
 }
